@@ -45,9 +45,23 @@ p {
 		margin-block-end: 1em;
 		margin-inline-start: 0px;
 		margin-inline-end: 0px;
+		margin-bottom: 20px !important;
 	}
 }	
 
+@media only screen and (min-width: 992px){
+	p {
+		font-size: 16px;
+		font-family: ff-zwo-web,arial,sans-serif!important;
+		line-height: 20px; 
+		color: #707070;
+		display: block;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+	}
+}	
 .navbar-brand  img{
 	display: flex;
 	height: 50px;
@@ -116,10 +130,15 @@ p {
 .product {
 	height: 150px;
 }
-
 @media only screen and (min-width: 768px){
 	.product {
-		height: 400px;
+		height: 320px;
+	}
+}	
+
+@media only screen and (min-width: 992px){
+	.product {
+		height: 426.6px;
 	}
 }	
 
@@ -268,6 +287,12 @@ header h2 {
 
 @media only screen and (min-width: 768px){
 	header h2 {
+		font-size: 30px;
+		line-height: 56px;
+	}
+}
+@media only screen and (min-width: 992px){
+	header h2 {
 		font-size: 36px;
 		line-height: 56px;
 		padding-bottom: 20px;
@@ -282,6 +307,16 @@ header h2 {
 	}
 }
 
+.col-md-6{
+	padding: 0px ;
+	margin: 0px !important;
+}
+.col-12{
+	padding: 0!important;
+}
+.col-md-12{
+	padding: 0!important;
+}
 .leftpadding{
 	padding: 0px 0px 0px 0px !important;
 }
@@ -289,27 +324,17 @@ header h2 {
 	padding: 0px 0px 0px 0px !important;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
 	.leftpadding {
 		padding: 0px 45px 0px 0px !important;
 	}
 }
 
-@media only screen and (min-width: 1280px){
-	.leftpadding {
-		padding: 0px 60px 0px 0px !important;
-	}
-}
 
-@media only screen and (min-width: 768px){
+
+@media only screen and (min-width: 992px){
 	.rightpadding {
 		padding: 0px 0px 0px 45px !important;
-	}
-}
-
-@media only screen and (min-width: 1280px){
-	.rightpadding {
-		padding: 0px 0px 0px 60px !important;
 	}
 }
 
@@ -326,16 +351,7 @@ h2{
 	padding: 0px!important;
 	margin: 0 0 0 0!important;
 }
-.col-md-6{
-	padding: 0px ;
-	margin: 0px !important;
-}
-.col-12{
-	padding: 0!important;
-}
-.col-md-12{
-	padding: 0!important;
-}
+
 .picture-flame{
 
 	padding: 0;
@@ -361,7 +377,19 @@ h2{
 }
 @media only screen and (min-width: 768px){
 	.engine{
-		height: 530px;
+		height: 500px;
+		text-align: center;
+
+		max-width:100%;
+	}
+	.engine p{
+		padding: 0px 120px 0px 120px !important;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	.engine{
+		height: 500px;
 		text-align: center;
 
 		max-width:100%;
@@ -372,6 +400,18 @@ h2{
 }
 
 @media only screen and (min-width: 1280px){
+	.engine{
+		height: 700px;
+		text-align: center;
+		
+		max-width:100%;
+	}
+	.engine p{
+		padding: 0px 260px 0px 260px !important;
+	}
+}
+
+@media only screen and (min-width: 1560px){
 	.engine{
 		height: 800px;
 		text-align: center;
@@ -385,6 +425,7 @@ h2{
 
 .TopButton{
 	font-size: 8px;
+	padding-top: 1%;
 	padding-bottom: 1%;
 }
 
